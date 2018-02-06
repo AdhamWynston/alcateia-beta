@@ -10,9 +10,19 @@
 <body>
  <div id="app">
    <v-app light>
-    <v-toolbar class="white">
-      <v-toolbar-title v-text="title"></v-toolbar-title>
-    </v-toolbar>
+    <!--<v-toolbar class="white">-->
+      <!--<img src="assets/alcateia-logo.png" alt="">-->
+    <!--</v-toolbar>-->
+     <v-toolbar>
+       <v-toolbar-title>Title</v-toolbar-title>
+       <v-spacer></v-spacer>
+       <v-toolbar-side-icon class="hidden-md-and-up"></v-toolbar-side-icon>
+       <v-toolbar-items class="hidden-sm-and-down">
+         <v-btn flat>Link One</v-btn>
+         <v-btn flat>Link Two</v-btn>
+         <v-btn flat>Link Three</v-btn>
+       </v-toolbar-items>
+     </v-toolbar>
     <v-content>
       <section>
         <v-parallax src="assets/hero.jpeg" height="600">
@@ -22,9 +32,9 @@
             justify-center
             class="white--text"
           >
-            <img src="assets/vuetify.png" alt="Vuetify.js" height="200">
-            <h1 class="white--text mb-2 display-1 text-xs-center">Parallax Template</h1>
-            <div class="subheading mb-3 text-xs-center">Powered by Vuetify</div>
+            <img src="assets/circ.png" alt="Vuetify.js" height="200">
+            <h1 class="white--text mb-2 display-1 text-xs-center">Alcateia Digital</h1>
+            <div class="subheading mb-3 text-xs-center">Sistemas & Softwares</div>
             <v-btn
               class="blue lighten-2 mt-5"
               dark
@@ -46,9 +56,9 @@
         >
           <v-flex xs12 sm4 class="my-3">
             <div class="text-xs-center">
-              <h2 class="headline">The best way to start developing</h2>
+              <h4 class="headline">Somos desenvolvedores que transformar ideias em negócios</h4>
               <span class="subheading">
-                Cras facilisis mi vitae nunc 
+                Transformando ideias em negócios.
               </span>
             </div>
           </v-flex>
@@ -61,12 +71,10 @@
                       <v-icon x-large class="blue--text text--lighten-2">color_lens</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Material Design</div>
+                      <div class="headline text-xs-center">Design dos produtos</div>
                     </v-card-title>
                     <v-card-text>
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
+                      Idealizamos produtos e serviços que trazem os resultados que você espera: inovação impulsionada pela criatividade.
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -76,12 +84,10 @@
                       <v-icon x-large class="blue--text text--lighten-2">flash_on</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline">Fast development</div>
+                      <div class="headline">Rápido Desenvolvimento</div>
                     </v-card-title>
                     <v-card-text>
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
+                      Integramos técnicas de desenvolvimento consolidadas de modo a criar uma solução para sua necessidade de forma ágil.
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -94,9 +100,9 @@
                       <div class="headline text-xs-center">Completely Open Sourced</div>
                     </v-card-title>
                     <v-card-text>
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
+                      Ajudamos nossos clientes a superar qualquer desafio,
+                      seja qual for o tamanho do problema: desde uma pequena renovação de interface até
+                      uma revisão completa da arquitetura.
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -129,7 +135,7 @@
             <v-flex xs12 sm4>
               <v-card class="elevation-0 transparent">
                 <v-card-title primary-title class="layout justify-center">
-                  <div class="headline">Company info</div>
+                  <div class="headline">Informações da empresa</div>
                 </v-card-title>
                 <v-card-text>
                   Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
@@ -141,18 +147,26 @@
             <v-flex xs12 sm4 offset-sm1>
               <v-card class="elevation-0 transparent">
                 <v-card-title primary-title class="layout justify-center">
-                  <div class="headline">Contact us</div>
+                  <div class="headline">Contato</div>
                 </v-card-title>
-                <v-card-text>
-                  Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
+                <v-card-text self-center>
+                  Estamos a disposição para atendê-lo, segue abaixo meios de entrar em contato:
                 </v-card-text>
                 <v-list class="transparent">
+                  <v-list-tile>
+                  <v-list-tile-action>
+                    <v-icon class="blue--text text--lighten-2">phone</v-icon>
+                  </v-list-tile-action>
+                  <v-list-tile-content>
+                    <v-list-tile-title>(64) 9 992369120</v-list-tile-title>
+                  </v-list-tile-content>
+                </v-list-tile>
                   <v-list-tile>
                     <v-list-tile-action>
                       <v-icon class="blue--text text--lighten-2">phone</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
-                      <v-list-tile-title>777-867-5309</v-list-tile-title>
+                      <v-list-tile-title>(64) 9 992369120</v-list-tile-title>
                     </v-list-tile-content>
                   </v-list-tile>
                   <v-list-tile>
@@ -160,7 +174,7 @@
                       <v-icon class="blue--text text--lighten-2">place</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
-                      <v-list-tile-title>Chicago, US</v-list-tile-title>
+                      <v-list-tile-title>Goiás, BR</v-list-tile-title>
                     </v-list-tile-content>
                   </v-list-tile>
                   <v-list-tile>
@@ -168,7 +182,7 @@
                       <v-icon class="blue--text text--lighten-2">email</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
-                      <v-list-tile-title>john@vuetifyjs.com</v-list-tile-title>
+                      <v-list-tile-title>contato@alcateiadigital.com.br</v-list-tile-title>
                     </v-list-tile-content>
                   </v-list-tile>
                 </v-list>
