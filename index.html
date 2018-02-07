@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Vuetify Parallax Starter</title>
+  <title>Alcateia Digital</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
@@ -13,41 +13,46 @@
     <!--<v-toolbar class="white">-->
       <!--<img src="assets/alcateia-logo.png" alt="">-->
     <!--</v-toolbar>-->
-     <v-toolbar>
-       <v-toolbar-title>Title</v-toolbar-title>
+     <v-toolbar color="yellow darken-2" dark>
+       <v-toolbar-title>
+       </v-toolbar-title>
        <v-spacer></v-spacer>
        <v-toolbar-side-icon class="hidden-md-and-up"></v-toolbar-side-icon>
        <v-toolbar-items class="hidden-sm-and-down">
-         <v-btn flat>Link One</v-btn>
-         <v-btn flat>Link Two</v-btn>
-         <v-btn flat>Link Three</v-btn>
+         <v-btn href="/#process" flat>Nossos processos</v-btn>
+         <v-btn href="/#why" flat>Quem somos</v-btn>
+         <v-btn href="/#contact" flat>Contato</v-btn>
        </v-toolbar-items>
      </v-toolbar>
     <v-content>
       <section>
-        <v-parallax src="assets/hero.jpeg" height="600">
+        <v-parallax src="assets/fundo1.jpg" height="700">
           <v-layout
             column
             align-center
             justify-center
             class="white--text"
           >
-            <img src="assets/circ.png" alt="Vuetify.js" height="200">
-            <h1 class="white--text mb-2 display-1 text-xs-center">Alcateia Digital</h1>
-            <div class="subheading mb-3 text-xs-center">Sistemas & Softwares</div>
+            <!--<img src="assets/circ.png" alt="Vuetify.js" height="200">-->
+            <h1 class="white--text mb-3 display-2 text-xs-center">Alcateia Digital</h1>
+            <h1 class="yellow--text mb-2 display-3 text-xs-center">Desenvolvimento de Sistemas Web</h1>
+            <!--<div class="subheading mb-3 text-xs-center">Sistemas web</div>-->
             <v-btn
-              class="blue lighten-2 mt-5"
+              class="mt-5"
               dark
+              flat
               large
-              href="/pre-made-themes"
+              color="yellow"
+              href="/#process"
             >
-              Get Started
+              <v-icon left dark>keyboard_arrow_down</v-icon>
+              Conheça já
             </v-btn>
           </v-layout>
         </v-parallax>
       </section>
 
-      <section>
+      <section id="process">
         <v-layout
           column
           wrap
@@ -56,9 +61,9 @@
         >
           <v-flex xs12 sm4 class="my-3">
             <div class="text-xs-center">
-              <h4 class="headline">Somos desenvolvedores que transformar ideias em negócios</h4>
+              <h2 class="grey-3--text mb-3 display-3">Nossos Processos</h2>
               <span class="subheading">
-                Transformando ideias em negócios.
+                Junto com você desde o início do produto até a manutenção e atualizações do sistema.
               </span>
             </div>
           </v-flex>
@@ -97,7 +102,7 @@
                       <v-icon x-large class="blue--text text--lighten-2">build</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Completely Open Sourced</div>
+                      <div class="headline text-xs-center">Entrega</div>
                     </v-card-title>
                     <v-card-text>
                       Ajudamos nossos clientes a superar qualquer desafio,
@@ -113,7 +118,7 @@
       </section>
 
       <section>
-        <v-parallax src="assets/section.jpg" height="380">
+        <v-parallax src="assets/fundo1.jpg" height="380">
           <v-layout column align-center justify-center>
             <div class="headline white--text mb-3 text-xs-center">Web development has never been easier</div>
             <em>Kick-start your application today</em>
@@ -129,7 +134,92 @@
         </v-parallax>
       </section>
 
+      <section id="why">
+        <v-layout
+                column
+                wrap
+                class="my-5"
+                align-center
+        >
+          <v-flex xs12 sm4 class="my-3">
+            <div class="text-xs-center">
+              <h4 class="headline">Quem somos</h4>
+              <span class="subheading">
+                Somos desenvolvedores que transformam ideias em negócios.
+              </span>
+            </div>
+          </v-flex>
+          <v-flex xs12>
+            <v-container grid-list-xl>
+              <v-layout row wrap align-center>
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">
+                    <v-card-text class="text-xs-center">
+                      <v-icon x-large class="blue--text text--lighten-2">assignment</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-xs-center">Missão</div>
+                    </v-card-title>
+                    <v-card-text>
+                      A Alcateia Digital desenvolve sistemas web para autônomos, pequenas e medias empresas.
+                      Utilizando tecnologia inovadoras e melhores práticas de desenvolvimento.
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">
+                    <v-card-text class="text-xs-center">
+                      <v-icon x-large class="blue--text text--lighten-2">trending_up</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline">Visão</div>
+                    </v-card-title>
+                    <v-card-text>
+                      Alcançar a excelência e a qualidade juntamente com nossos clientes, fornecedores e colaboradores.
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">
+                    <v-card-text class="text-xs-center">
+                      <v-icon x-large class="blue--text text--lighten-2">stars</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-xs-center">Valores</div>
+                    </v-card-title>
+                    <v-card-text>
+                      Respeito ético e moral,comportamento disciplinar, profissionalismo e educação são os princípios básicos da Alcateia Digital.
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-flex>
+        </v-layout>
+      </section>
+
       <section>
+        <v-parallax src="assets/fundo1.jpg" height="380">
+          <v-layout column align-center justify-center>
+            <h1 class="white--text mb-2 display-2 text-xs-center">Vamos bater um papo ?</h1>
+            <!--<h1 class="yellow&#45;&#45;text mb-2 display-3 text-xs-center">Desenvolvimento de Sistemas Web</h1>-->
+            <h2 class="white--text mb-2 text-xs-center"> Iremos tornar sua ideia um negócio!</h2>
+            <v-btn
+                    class="mt-5"
+                    color="yellow"
+                    dark
+                    flat
+                    large
+                    href="/#contact"
+            >
+              <v-icon left dark>phone</v-icon>
+              Fale Conosco
+            </v-btn>
+          </v-layout>
+        </v-parallax>
+      </section>
+
+      <section id="contact">
         <v-container grid-list-xl>
           <v-layout row wrap justify-center class="my-5">
             <v-flex xs12 sm4>
@@ -150,7 +240,7 @@
                   <div class="headline">Contato</div>
                 </v-card-title>
                 <v-card-text self-center>
-                  Estamos a disposição para atendê-lo, segue abaixo meios de entrar em contato:
+                  Vamos adorar conversar sobre seu projeto e discutir sobre como podemos te ajudar.
                 </v-card-text>
                 <v-list class="transparent">
                   <v-list-tile>
@@ -158,7 +248,7 @@
                     <v-icon class="blue--text text--lighten-2">phone</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
-                    <v-list-tile-title>(64) 9 992369120</v-list-tile-title>
+                    <v-list-tile-title>(64) 9 9236-9120</v-list-tile-title>
                   </v-list-tile-content>
                 </v-list-tile>
                   <v-list-tile>
@@ -166,7 +256,7 @@
                       <v-icon class="blue--text text--lighten-2">phone</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
-                      <v-list-tile-title>(64) 9 992369120</v-list-tile-title>
+                      <v-list-tile-title>(62) 9 8170-3778</v-list-tile-title>
                     </v-list-tile-content>
                   </v-list-tile>
                   <v-list-tile>
@@ -192,14 +282,12 @@
         </v-container>
       </section>
 
-      <v-footer class="blue darken-2">
+      <v-footer class="yellow darken-2">
         <v-layout row wrap align-center>
           <v-flex xs12>
             <div class="white--text ml-3">
-              Made with
-              <v-icon class="red--text">favorite</v-icon>
-              by <a class="white--text" href="https://vuetifyjs.com" target="_blank">Vuetify</a>
-              and <a class="white--text" href="https://github.com/vwxyzjn">Costa Huang</a>
+              Produzido
+              por <a class="white--text" href="#" target="_blank">Alcateia Digital - 2018</a>
             </div>
           </v-flex>
         </v-layout>
